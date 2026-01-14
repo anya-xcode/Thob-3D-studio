@@ -1,0 +1,93 @@
+.avatar-selector-container {
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background: #ffffff;
+  color: #000000;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #000000;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.recommendation-btn {
+  background: #000000;
+  color: #ffffff;
+  border: 2px solid #000000;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.recommendation-btn:hover {
+  background: #333333;
+}
+
+.nav-buttons .wishlist-heart-btn {
+  background: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  min-width: 50px;
+  transition: all 0.2s;
+  line-height: 1;
+}
+
+.nav-buttons .wishlist-heart-btn:hover {
+  background: #000000;
+  color: #ff0000;
+  transform: scale(1.15);
+}
+
+.avatar-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+}
+
+.avatar-card {
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 2rem;
+  cursor: pointer;
+  border: 2px solid #000000;
+  width: 200px;
+}
+
+.avatar-card:hover {
+  background: #e0e0e0;
+}
+
+.avatar-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  background: #ffffff;
+  border: 2px solid #000000;
+}
+
+.avatar-card h3 {
+  color: #000000;
+  margin: 0;
+  font-size: 1.2rem;
+}
