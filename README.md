@@ -6,17 +6,17 @@ A full-stack web application for 3D avatar customization with AI-powered outfit 
 
 ```
 thob/
-├── client/                 # React frontend
+├── client/                 
 │   ├── src/
-│   │   ├── components/    # Avatar components
-│   │   ├── pages/         # Page components
-│   │   └── assets/        # Images and assets
+│   │   ├── components/    
+│   │   ├── pages/         
+│   │   └── assets/        
 │   └── package.json
-├── server/                # Node.js backend
-│   ├── index.js          # Express server
-│   ├── recommender.js    # AI recommendation engine
+├── server/                
+│   ├── index.js          
+│   ├── recommender.js    
 │   └── package.json
-└── vercel.json           # Deployment configuration
+└── vercel.json           
 ```
 
 ## Features
