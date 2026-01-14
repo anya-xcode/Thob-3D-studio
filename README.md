@@ -1,69 +1,87 @@
-# Avatar Selection App
+# Thob 3D Studio - Avatar Customization Platform
 
-A full-stack web application with React frontend and Node.js backend for selecting boy/girl avatars.
+A full-stack web application for 3D avatar customization with AI-powered outfit recommendations.
 
 ## Project Structure
 
 ```
 thob/
-├── client/          # React frontend
+├── client/                 # React frontend
 │   ├── src/
-│   │   ├── components/
-│   │   │   ├── AvatarSelector.jsx
-│   │   │   └── AvatarSelector.css
-│   │   ├── App.jsx
-│   │   └── App.css
+│   │   ├── components/    # Avatar components
+│   │   ├── pages/         # Page components
+│   │   └── assets/        # Images and assets
 │   └── package.json
-└── server/          # Node.js backend
-    ├── index.js
-    └── package.json
+├── server/                # Node.js backend
+│   ├── index.js          # Express server
+│   ├── recommender.js    # AI recommendation engine
+│   └── package.json
+└── vercel.json           # Deployment configuration
 ```
+
+## Features
+
+- 3D Avatar Customization (Boy/Girl)
+- Real-time color and outfit changes
+- AI-Powered Outfit Recommendations
+- Wishlist functionality with local storage
+- Responsive black and white design
+- Three.js 3D rendering
+
+## Technologies Used
+
+**Frontend**
+- React 18
+- Three.js with React Three Fiber
+- React Router DOM
+- Vite
+
+**Backend**
+- Node.js
+- Express
+- CORS
+- Custom AI Recommendation Engine
 
 ## Setup Instructions
 
 ### Backend Setup
-1. Navigate to server directory:
-   ```bash
-   cd server
-   ```
 
-2. Start the server:
-   ```bash
-   npm start
-   ```
-   Server will run on http://localhost:5000
+1. Navigate to server directory:
+```bash
+cd server
+npm install
+npm start
+```
+Server runs on http://localhost:5000
 
 ### Frontend Setup
+
 1. Navigate to client directory:
-   ```bash
-   cd client
-   ```
+```bash
+cd client
+npm install
+npm run dev
+```
+Frontend runs on http://localhost:5173
 
-2. Start the development server:
-   ```bash
-   npm run dev
-   ```
-   Frontend will run on http://localhost:5173
+## Deployment
 
-## Features
+This project is configured for Vercel deployment:
 
-- ✅ React frontend with Vite
-- ✅ Node.js/Express backend
-- ✅ Avatar selection (Boy/Girl)
-- ✅ Beautiful gradient UI
-- ✅ Responsive design
-- ✅ API integration with fallback
-- ✅ Uses DiceBear API for avatar generation
+1. Push code to GitHub
+2. Connect repository to Vercel
+3. Deploy automatically
+
+## API Endpoints
+
+- POST /api/recommend-outfit - Get AI outfit recommendations
+- GET /api/avatars - Get available avatars
 
 ## How to Use
 
-1. Start both backend and frontend servers
-2. Open http://localhost:5173 in your browser
-3. Click on Boy or Girl avatar to select
-4. Your selection will be displayed below
+1. Select Boy or Girl avatar from home page
+2. Customize colors and outfits in 3D view
+3. Get outfit recommendations based on your profile
+4. Add recommendations to wishlist
+5. View and manage wishlist items
 
-## Technologies Used
-
-- **Frontend**: React, Vite, CSS3
-- **Backend**: Node.js, Express, CORS
-- **Avatar API**: DiceBear Avatars
